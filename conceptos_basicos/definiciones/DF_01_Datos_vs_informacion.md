@@ -2,8 +2,9 @@
 
 Es un error común usar términos como datos, información y conocimiento indistintamente, ya que los tres tienen significados muy diferentes.
 
-<center><img src="img/df_01_data_vs_info_1.png" alt="Pirámide del conocimiento" title="Pirámide del conocimiento" width="400"/></center>
-<center><caption><i><b>Figura 1:</b> Pirámide del conocimiento.</i></caption></center><br>
+<center><img src="img/df_01_data_vs_info_1.png" alt="Pirámide del conocimiento" width=400 /></center>
+<center><caption><i><b>Figura 1:</b> Pirámide del conocimiento.</i></caption></center>
+<br>
 
 Dado que estas terminologías a menudo se confunden, así es como podemos distinguirlas:
 
@@ -57,5 +58,6 @@ Se dice que hay dos tipos de conocimiento:
 * _Conocimiento implícito._ Conocimiento que no está escrito ni almacenado digitalmente. Es procedimental o forma parte de la práctica. La mayor parte del conocimiento de las organizaciones es implícito, generalmente solo reside en la memoria de las personas de la organización. Es el conocimiento colectivo que no está documentado.
 * _Conocimiento explícito_. Conocimiento escrito y accesible. Puede ser en papel o en formato digital. Algunos ejemplos son los manuales o la información documentada.
 
-<center><img src="img/df_01_data_vs_info_2.jpeg" alt="Meme datos vs info" title="Meme datos vs info" width="400"/></center>
-<center><caption><i><b>Figura 2:</b> Datos vs información vs conocimiento (@gapingvoid).</i></caption></center><br>
+<center><img src="img/df_01_data_vs_info_2.jpeg" alt="Meme datos vs info" width=400/></center>
+<center><caption><i><b>Figura 2:</b> Datos vs información vs conocimiento (@gapingvoid).</i></caption></center>
+<br>

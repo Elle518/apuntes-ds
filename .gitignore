@@ -1,0 +1,2 @@
+# For Git ignoring JNB checkpoints files
+.ipynb_checkpoints

@@ -16,7 +16,7 @@ Esta disciplina requiere tanto el uso de una batería de herramientas tecnológi
 
 # Inteligencia artificial
 
-La forma más sencilla de definir la _**inteligencia artificial**_ _(aritificial intelligence)_ es como la ciencia de hacer las cosas inteligentes, es decir, consiste en automatizar tareas que normalmente se atribuyen al pensamiento y raciocinio humano, como la resolución de problemas, la toma de decisiones y el aprendizaje.
+La forma más sencilla de definir la _**inteligencia artificial**_ _(artificial intelligence)_ es como la ciencia de hacer las cosas inteligentes, es decir, consiste en automatizar tareas que normalmente se atribuyen al pensamiento y raciocinio humano, como la resolución de problemas, la toma de decisiones y el aprendizaje.
 
 La IA vive en la intersección de varias disciplinas clásicas, incluyendo filosofía, neurociencia, lingüística, economía, psicología, ciencias de la computación, ingeniería... Es el nombre de todo un campo del conocimiento, como la química o la biología.
 

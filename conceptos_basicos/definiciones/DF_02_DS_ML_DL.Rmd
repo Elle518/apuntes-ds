@@ -131,6 +131,6 @@ A continuación, recopilo algunas de las citas más famosas relacionadas con la 
 
 # Fuentes
 
-- [Machine Learning for Everyone](https://vas3k.com/blog/machine_learning/)
-- [Machine Learning - Zeiss](https://blogs.zeiss.com/digital/the-relation-between-computer-vision-and-machine-learning/machine-learning/)
-- [Traditional Programming vs Machine Learning](https://sravya-tech-usage.medium.com/traditional-programming-vs-machine-learning-e9bbed5e491c)
+- [_Machine Learning for Everyone_](https://vas3k.com/blog/machine_learning/)
+- [_Machine Learning - Zeiss_](https://blogs.zeiss.com/digital/the-relation-between-computer-vision-and-machine-learning/machine-learning/)
+- [_Traditional Programming vs Machine Learning_](https://sravya-tech-usage.medium.com/traditional-programming-vs-machine-learning-e9bbed5e491c)

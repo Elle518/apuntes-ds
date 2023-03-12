@@ -1,3 +1,7 @@
+---
+output: pdf_document
+---
+
 # Ciencia de datos
 
 La _**ciencia de datos**_ _(data science)_ es la práctica de usar un conjunto de técnicas analíticas y metodologías para hacer inferencias y comunicar predicciones valiosas y justificadas a partir de datos en bruto.
@@ -6,9 +10,9 @@ La clave aquí es la palabra _**predicción**_, la habilidad de predecir es la q
 
 Pero un científico de datos no usa ninguna bola de cristal para hacer esas predicciones, sino que utiliza las matemáticas y la programación y su conocimiento sobre el dominio.
 
-<center><img src="img/df_02_ds_1.png" alt="Matemáticas y código" width=400 /></center>
-<center><caption><i><b>Figura 1:</b> Ciencia de datos.</i></caption></center>
-<br>
+```{r data_science, echo=FALSE, fig.cap="Ciencia de datos", fig.align = 'center', out.width = '300px'}
+knitr::include_graphics("img/df_02_ds_1.png")
+```
 
 Así, vamos a ver que la ciencia de datos es interdisciplinar, combina el uso de la estadística, las matemáticas y la programación para permitirnos responder preguntas muy interesantes haciendo uso de los datos en bruto.
 
@@ -25,6 +29,7 @@ Una IA no es más que alguna forma de inteligencia humana mostrada por máquinas
 Podemos definir la _**inteligencia**_ como la habilidad de un sistema de calcular, razonar, percibir relaciones y analogías, aprender de la experiencia, guardar y recuperar información de la memoria, resolver problemas, entender ideas complejas, usar el lenguaje natural de manera fluida, clasificar, generalizar y adaptarse a nuevas situaciones.
 
 La inteligencia es algo intangible y está compuesta por:
+
 - _Razonamiento._ Es el conjunto de procesos que nos permiten realizar juicios, tomar decisiones y hacer predicciones. Hay dos tipos de razonamiento: inductivo y deductivo.
 - _Resolución de problemas._ Es el proceso en el cual uno percibe y trata de llegar a una solución deseada desde una situación actual tomando cierto camino, el cual está bloqueado por obstáculos conocidos o desconocidos. También incluye la toma de decisiones, la cual es el proceso de seleccionar la alternativa más adecuada de entre varias para alcanzar la meta deseada.
 - _Percepción._ Es el proceso de adquirir, interpretar, seleccionar y organizar información sensorial. La percepción asume sentir. En los humanos, la percepción es ayudada por los órganos de los sentidos. En el dominio de la IA el mecanismo de percepción reúne los datos adquiridos por los sensores de una manera significativa.
@@ -34,6 +39,7 @@ Todos los sistemas de IA implementados hoy en día son una forma de IA débil, e
 A día de hoy, siempre vamos a necesitar código escrito por humanos para crear un sistema capaz de aprender cosas. Una IA débil puede parecer inteligente, pero vamos a ver que por lo general no es más que una serie de cálculos matemáticos y estadísticos sofisticados, y ni mucho menos tiene conciencia, siente, ni es consciente de su propia existencia como algunas personas piensan.
 
 Una IA para considerarse como tal debería:
+
 - Aprender a través de los datos y hacer predicciones sobre ellos.
 - Servir para automatizar procesos. Las máquinas pueden hacer tareas repetitivas muy deprisa, con mucha precisión y sin cansarse.
 - Enseñarse a sí misma. Es necesario que un sistema pueda enseñarse a sí mismo porque los datos mismos cambian y el conocimiento derivado de esos datos debe ser actualizado constantemente.
@@ -50,6 +56,7 @@ Son un conjunto de algoritmos capaces de aproximar funciones complejas o descubr
 Estos algoritmos pueden ser reutilizados para reconocer nuevos patrones usando otros datos con el mismo código, lo que es muy poderoso.
 
 Un sistema de aprendizaje automático es inteligente porque:
+
 1. Usa ciertos datos para ser entrenado.
 2. Aprende patrones de esos datos.
 3. Clasifica correctamente nuevos datos que no había visto hasta entonces basándose en el conocimiento adquirido en el paso 2.
@@ -62,9 +69,9 @@ Así, mientras en la programación tradicional se escribe un programa con una se
 
 Lo interesante de los sistemas o algoritmos de aprendizaje es que pueden ser reutilizados para reconocer otros patrones cuando son entrenados con otros conjuntos de datos sin tener que reescribir el código, a diferencia de lo que pasa con los sistemas basado en reglas tradicionales que si cambian la entrada el programa es tan rígido que ya no nos sirve y hay que reescribirlo.
 
-<center><img src="img/df_02_ml_1.png" alt="Programación tradicional vs aprendizaje automático" width=500 /></center>
-<center><caption><i><b>Figura 2:</b> Programación tradicional vs aprendizaje automático.</i></caption></center>
-<br>
+```{r trad_prog, echo=FALSE, fig.cap="Programación tradicional vs aprendizaje automático", fig.align = 'center', out.width = '300px'}
+knitr::include_graphics("img/df_02_ml_1.png")
+```
 
 Un modelo es solo un código que una máquina usa para convertir entradas en salidas, y puede ser creado a mano por un programador o aprendido de los datos por un algoritmo. El aprendizaje automático es un paradigma de programación completamente diferente, en el que en lugar de dar instrucciones explícitas, programamos con muestras y el algoritmo de aprendizaje automático encuentra patrones en los datos y los convierte en esas instrucciones que no podríamos escribir nosotros mismos.
 
@@ -86,11 +93,12 @@ Para enseñar a las máquinas necesitamos 3 elementos:
 2. _**Características**_. También conocidas como parámetros, atributos o variables, son los factores en los que el sistema de aprendizaje automático se tiene que fijar. Cuando los datos están almacenados en tablas es sencillo, los atributos son las columnas.
 3. _**Algoritmos**_. Cada problema puede resolverse de diferentes maneras y el método elegido afecta a la precisión, el rendimiento y el tamaño del modelo final. Pero si los datos son malos ni el mejor algoritmo puede ayudar.
 
-<center><img src="img/df_02_ml_2.jpg" alt="Componentes del aprendizaje automático" width=400 /></center>
-<center><caption><i><b>Figura 3:</b> Componentes del  aprendizaje automático.</i></caption></center>
-<br>
+```{r ml_comp, echo=FALSE, fig.cap="Componentes del aprendizaje automático", fig.align = 'center', out.width = '300px'}
+knitr::include_graphics("img/df_02_ml_2.jpg")
+```
 
 La elección del algoritmo depende principalmente de 3 factores:
+
 * La calidad de los datos de entrada. Ningún dataset es perfecto, en la vida real están plagados de problemas como ruido, datos que faltan, datos atípicos, ausencia de datos suficientes para entrenar... lo que va a condicionar el algoritmo que podemos usar.
 * El tipo de salida que se necesita, la cual está directamente relacionado con la clase de preguntas de negocio que necesitamos responder.
 * Las limitaciones del negocio. Estas vienen en forma de costes, tiempo para obtener un rendimiento (_time-to-market_), consumo de recursos de los dispositivos, infraestructura disponible, nivel de precisión requerido, necesidad de interpretabilidad...
@@ -99,9 +107,9 @@ La elección del algoritmo depende principalmente de 3 factores:
 
 Por último, el _**aprendizaje profundo**_ _(deep learning)_ no es más que una técnica de aprendizaje automático que hace uso de un tipo especial de algoritmos organizados en capas conocido como _**redes neuronales**_ y, en concreto, aquellas con muchas capas.
 
-<center><img src="img/df_02_ds_2.jpg" alt="Inteligencia artificial vs aprendizaje automático" width=400 /></center>
-<center><caption><i><b>Figura 4:</b> Inteligencia artificial vs aprendizaje automático.</i></caption></center>
-<br>
+```{r ai_ml, echo=FALSE, fig.cap="Inteligencia artificial vs aprendizaje automático", fig.align = 'center', out.width = '300px'}
+knitr::include_graphics("img/df_02_ds_2.jpg")
+```
 
 
 # Citas curiosas

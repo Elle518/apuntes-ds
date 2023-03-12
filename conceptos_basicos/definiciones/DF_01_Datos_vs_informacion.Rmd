@@ -1,10 +1,14 @@
+---
+output: pdf_document
+---
+
 # Datos, información y conocimiento
 
 Es un error común usar términos como datos, información y conocimiento indistintamente, ya que los tres tienen significados muy diferentes.
 
-<center><img src="img/df_01_data_vs_info_1.png" alt="Pirámide del conocimiento" width=400 /></center>
-<center><caption><i><b>Figura 1:</b> Pirámide del conocimiento.</i></caption></center>
-<br>
+```{r data, echo=FALSE, fig.cap="Pirámide del conocimiento", fig.align = 'center', out.width = '300px'}
+knitr::include_graphics("img/df_01_data_vs_info_1.png")
+```
 
 Dado que estas terminologías a menudo se confunden, así es como podemos distinguirlas:
 
@@ -55,9 +59,10 @@ Mientras que la transferencia de datos e información es fácil a través de dif
 Así que como vemos no hay que confundir datos, información y conocimiento porque son cosas diferentes, el conocimiento lleva aparejado un aprendizaje.
 
 Se dice que hay dos tipos de conocimiento:
-* _Conocimiento implícito._ Conocimiento que no está escrito ni almacenado digitalmente. Es procedimental o forma parte de la práctica. La mayor parte del conocimiento de las organizaciones es implícito, generalmente solo reside en la memoria de las personas de la organización. Es el conocimiento colectivo que no está documentado.
-* _Conocimiento explícito_. Conocimiento escrito y accesible. Puede ser en papel o en formato digital. Algunos ejemplos son los manuales o la información documentada.
 
-<center><img src="img/df_01_data_vs_info_2.jpeg" alt="Meme datos vs info" width=400/></center>
-<center><caption><i><b>Figura 2:</b> Datos vs información vs conocimiento (@gapingvoid).</i></caption></center>
-<br>
+* _Conocimiento implícito._ Conocimiento que no está escrito ni almacenado digitalmente. Es procedimental o forma parte de la práctica. La mayor parte del conocimiento de las organizaciones es implícito, generalmente solo reside en la memoria de las personas de la organización. Es el conocimiento colectivo que no está documentado.
+* _Conocimiento explícito._ Conocimiento escrito y accesible. Puede ser en papel o en formato digital. Algunos ejemplos son los manuales o la información documentada.
+
+```{r meme, echo=FALSE, fig.cap="Datos vs información vs conocimiento (@gapingvoid)", fig.align = 'center', out.width = '300px'}
+knitr::include_graphics("img/df_01_data_vs_info_2.jpeg")
+```

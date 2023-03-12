@@ -246,3 +246,6 @@ Temporary Items
 
 # Built Visual Studio Code Extensions
 *.vsix
+
+# PDFs
+*.pdf

@@ -1,6 +1,12 @@
 ---
-output: pdf_document
+output: 
+  pdf_document:
+    extra_dependencies: ["float"]
 ---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(fig.pos = "H", out.extra = "")
+```
 
 # Estadística
 
@@ -8,7 +14,7 @@ El campo de la _**estadística**_ es la ciencia de aprender de los datos, y cons
 
 Entendemos por _**datos**_ hechos o fragmentos de información que podemos recolectar. Las estadísticas usan evidencias numéricas para sacar conclusiones válidas a partir de esos datos.
 
-```{r stats, echo=FALSE, fig.cap="Estadística", fig.align = 'center', out.width = '150px'}
+```{r stats, echo=FALSE, fig.cap="Estadística", fig.align = 'center', out.width = '100px'}
 knitr::include_graphics("img/statistics_1.png")
 ```
 
@@ -38,6 +44,7 @@ Los analistas sin escrúpulos pueden utilizar una metodología incorrecta para s
 
 Las estadísticas descriptivas e inferenciales son dos categorías amplias en el campo de la estadística, ambos tipos de estadísticas son importantes para diferentes propósitos. Aunque algunas de las medidas estadísticas son similares, los objetivos y las metodologías son muy diferentes en ambos casos.
 
+
 ## Estadística descriptiva
 
 Las _**estadísticas descriptivas**_ sirven para resumir y graficar las propiedades de los datos de un grupo que elijamos, es decir, describen una muestra. Este proceso nos permite comprender ese conjunto específico de observaciones.
@@ -65,6 +72,7 @@ knitr::include_graphics("img/interquartile_range_1.png")
 
 En la teoría estadística, la localización y la variabilidad se conocen como el primer y segundo momento de una distribución. Los momentos tercero y cuarto se denominan asimetría _(skewness)_ y kurtosis _(kurtois)_. La asimetría se refiere a si los datos están sesgados hacia valores más grandes o más pequeños, y la kurtosis indica la propensión de los datos a tener valores extremos. Generalmente, no se utilizan métricas para medir la asimetría y la kurtosis, en cambio, estos se descubren a través de representaciones gráficas.
 
+
 ## Estadística inferencial
 
 La _**estadística inferencial**_ es una parte de la estadística que comprende los métodos y procedimientos que por medio de la inducción determinan propiedades de una población estadística a partir de una parte de esta o muestra.
@@ -73,7 +81,7 @@ Así, los estadísticos se refieren al proceso de usar muestras para estimar las
 
 La estadística inferencial toma datos de una muestra y hace inferencias sobre la población más grande de la que se extrajo la muestra. Debido a que el objetivo de la estadística inferencial es sacar conclusiones de una muestra y generalizarlas a una población, debemos tener confianza en que nuestra muestra refleja con precisión a la población.
 
-```{r pm, echo=FALSE, fig.cap="Población vs muestra", fig.align = 'center', out.width = '300px'}
+```{r pm, echo=FALSE, fig.cap="Población vs muestra", fig.align = 'center', out.width = '200px'}
 knitr::include_graphics("img/population_vs_sample.png")
 ```
 
@@ -117,7 +125,7 @@ El _**análisis de regresión**_ describe la relación entre un conjunto de vari
 
 Si tenemos una gráfica que muestra la relación en el modelo de regresión entre dos variables para una muestra, y si la relación es estadísticamente significativa, tenemos evidencia suficiente para concluir que esta relación existe en la población y no solo en la muestra.
 
-```{r rl, echo=FALSE, fig.cap="Regresión lineal", fig.align = 'center', out.width = '300px'}
+```{r rl, echo=FALSE, fig.cap="Regresión lineal", fig.align = 'center', out.width = '250px'}
 knitr::include_graphics("img/linear_fit.png")
 ```
 
@@ -128,6 +136,7 @@ Para las estadísticas descriptivas, elegimos un grupo que queremos describir y 
 Para las estadísticas inferenciales, necesitamos definir la población y luego diseñar un plan de muestreo que produzca una muestra representativa. Los resultados estadísticos incorporan la incertidumbre inherente al uso de una muestra para comprender una población completa. El tamaño de la muestra se convierte en una característica vital. La _**Ley de los grandes números**_ establece que a medida que crece el tamaño de la muestra, las estadísticas de la muestra convergerán en el valor de la población.
 
 Un estudio que utiliza estadísticas descriptivas es más sencillo de realizar. Sin embargo, si necesitamos evidencia de que existe un efecto o una relación entre las variables en una población completa en lugar de solo en su muestra, debemos usar estadísticas inferenciales.
+
 
 # Fuentes
 

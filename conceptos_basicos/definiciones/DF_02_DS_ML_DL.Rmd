@@ -1,6 +1,12 @@
 ---
-output: pdf_document
+output: 
+  pdf_document:
+    extra_dependencies: ["float"]
 ---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(fig.pos = "H", out.extra = "")
+```
 
 # Ciencia de datos
 
@@ -17,6 +23,7 @@ knitr::include_graphics("img/df_02_ds_1.png")
 Así, vamos a ver que la ciencia de datos es interdisciplinar, combina el uso de la estadística, las matemáticas y la programación para permitirnos responder preguntas muy interesantes haciendo uso de los datos en bruto.
 
 Esta disciplina requiere tanto el uso de una batería de herramientas tecnológicas como de pensamiento crítico y conocimiento del dominio para manejar esos datos.
+
 
 # Inteligencia artificial
 
@@ -46,6 +53,7 @@ Una IA para considerarse como tal debería:
 - Responder en tiempo real.
 
 Definimos _**modelado cognitivo**_ como el campo de estudio dentro de las ciencias de la computación que se encarga del estudio y simulación de procesos de pensamiento del ser humano.
+
 
 # Aprendizaje automático
 
@@ -85,6 +93,7 @@ Debemos tener cuidado de no confundir el aprendizaje automático con la automati
 
 Otro aspecto a tener en cuenta es que el aprendizaje automático carece de poder de razonamiento, por lo que no es bueno a la hora de generalizar el conocimiento. Así, si un modelo es entrenado para resolver una tarea, por ejemplo identificar gatos en imágenes, deberá ser entrenado de nuevo para, por ejemplo, reconocer personas.
 
+
 ## Componentes del aprendizaje automático
 
 Para enseñar a las máquinas necesitamos 3 elementos:
@@ -102,6 +111,7 @@ La elección del algoritmo depende principalmente de 3 factores:
 * La calidad de los datos de entrada. Ningún dataset es perfecto, en la vida real están plagados de problemas como ruido, datos que faltan, datos atípicos, ausencia de datos suficientes para entrenar... lo que va a condicionar el algoritmo que podemos usar.
 * El tipo de salida que se necesita, la cual está directamente relacionado con la clase de preguntas de negocio que necesitamos responder.
 * Las limitaciones del negocio. Estas vienen en forma de costes, tiempo para obtener un rendimiento (_time-to-market_), consumo de recursos de los dispositivos, infraestructura disponible, nivel de precisión requerido, necesidad de interpretabilidad...
+
 
 # Aprendizaje profundo
 

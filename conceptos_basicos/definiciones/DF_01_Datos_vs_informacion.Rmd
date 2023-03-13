@@ -1,6 +1,12 @@
 ---
-output: pdf_document
+output: 
+  pdf_document:
+    extra_dependencies: ["float"]
 ---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(fig.pos = "H", out.extra = "")
+```
 
 # Datos, información y conocimiento
 
@@ -11,6 +17,7 @@ knitr::include_graphics("img/df_01_data_vs_info_1.png")
 ```
 
 Dado que estas terminologías a menudo se confunden, así es como podemos distinguirlas:
+
 
 ## Datos
 
@@ -23,6 +30,7 @@ Son un conjunto discreto de valores sin procesar, que aún no han sido analizado
 Una simple fecha, por ejemplo, es un dato que sin un propósito, una utilidad o un contexto no sirve como base para apoyar la toma de una decisión.
 
 Recolectar y medir observaciones genera datos y, por lo general, las máquinas envían, reciben y procesan datos.
+
 
 ## Información
 
@@ -37,6 +45,7 @@ Así, la información se puede definir como un conjunto de datos procesados y qu
 En última instancia, el propósito de procesar datos y convertirlos en información es ayudar a las organizaciones a tomar mejores decisiones.
 
 La confusión entre datos e información a menudo surge porque la información está hecha de datos. Además, los datos a menudo se interpretan como hechos en el contexto del significado coloquial y, por lo tanto, se consideran información.
+
 
 ## Conocimiento
 

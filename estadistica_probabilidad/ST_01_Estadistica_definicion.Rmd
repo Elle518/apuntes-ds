@@ -141,3 +141,4 @@ Un estudio que utiliza estadísticas descriptivas es más sencillo de realizar. 
 # Fuentes
 
 - [_Difference between Descriptive and Inferential Statistics_](https://statisticsbyjim.com/basics/descriptive-inferential-statistics/)
+- [_The Importance of Statistics_](https://statisticsbyjim.com/basics/importance-statistics/)

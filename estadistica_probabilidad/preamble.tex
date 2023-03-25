@@ -1,0 +1,12 @@
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{datetime2}
+
+\DTMsetstyle{ddmmyyyy}
+
+\setlength{\headheight}{13pt}
+
+\pagestyle{fancy}
+% center of header
+\fancyhead[C]{\today}
+\fancyfoot[C]{\thepage\ de \pageref{LastPage}}

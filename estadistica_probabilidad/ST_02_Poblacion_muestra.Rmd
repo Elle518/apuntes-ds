@@ -2,6 +2,8 @@
 output: 
   pdf_document:
     extra_dependencies: ["float"]
+    includes:
+      in_header: "preamble.tex"
 ---
 
 ```{r setup, include=FALSE}
@@ -174,8 +176,8 @@ El error de muestreo es la diferencia entre el valor correcto de la población y
 
 Los intervalos de confianza y los márgenes de error son dos métodos para estimar el error de muestreo.
 
-# Fuentes
+## Fuentes
 
-- [_Population vs Sample: Uses and Examples_](https://statisticsbyjim.com/basics/population-vs-sample/)
-- [_Parameter vs Statistic: Examples & Differences_](https://statisticsbyjim.com/basics/parameter-vs-statistic/)
-- [_Populations, Parameters, and Samples in Inferential Statistics_](https://statisticsbyjim.com/basics/populations-parameters-samples-inferential-statistics/)
+- [_Population vs Sample: Uses and Examples_ - Statistics By Jim](https://statisticsbyjim.com/basics/population-vs-sample/)
+- [_Parameter vs Statistic: Examples & Differences_ - Statistics By Jim](https://statisticsbyjim.com/basics/parameter-vs-statistic/)
+- [_Populations, Parameters, and Samples in Inferential Statistics_ - Statistics By Jim](https://statisticsbyjim.com/basics/populations-parameters-samples-inferential-statistics/)

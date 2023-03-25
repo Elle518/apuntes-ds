@@ -2,6 +2,8 @@
 output: 
   pdf_document:
     extra_dependencies: ["float"]
+    includes:
+      in_header: "preamble.tex"
 ---
 
 ```{r setup, include=FALSE}
@@ -181,7 +183,7 @@ De hecho, la incorporación de un factor de confusión al análisis no solo pued
 
 En este sentido, es importante tener presente que la capacidad de los investigadores para establecer inferencias causales a partir del análisis de sus datos está muy relacionada con la naturaleza del diseño de la investigación empleado para obtenerlas. Si entendemos el análisis estadístico como la culminación de un complejo proceso de planificación a través del cual se lleva a cabo cualquier investigación cuantitativa, resulta conveniente distinguir dos grandes tipos de diseños: la _**investigación experimental**_ y la _**investigación observacional**_.
 
-# Fuentes
+## Fuentes
 
-- [_What is a Variable?_](https://statisticsbyjim.com/basics/what-is-a-variable/)
-- [_Independent and Dependent Variables: Differences & Examples_](hhttps://statisticsbyjim.com/regression/independent-dependent-variables/)
+- [_What is a Variable?_ - Statistics By Jim](https://statisticsbyjim.com/basics/what-is-a-variable/)
+- [_Independent and Dependent Variables: Differences & Examples_ - Statistics By Jim](hhttps://statisticsbyjim.com/regression/independent-dependent-variables/)

@@ -2,6 +2,8 @@
 output: 
   pdf_document:
     extra_dependencies: ["float"]
+    includes:
+      in_header: "preamble.tex"
 ---
 
 ```{r setup, include=FALSE}
@@ -138,7 +140,7 @@ Para las estadísticas inferenciales, necesitamos definir la población y luego 
 Un estudio que utiliza estadísticas descriptivas es más sencillo de realizar. Sin embargo, si necesitamos evidencia de que existe un efecto o una relación entre las variables en una población completa en lugar de solo en su muestra, debemos usar estadísticas inferenciales.
 
 
-# Fuentes
+## Fuentes
 
-- [_Difference between Descriptive and Inferential Statistics_](https://statisticsbyjim.com/basics/descriptive-inferential-statistics/)
-- [_The Importance of Statistics_](https://statisticsbyjim.com/basics/importance-statistics/)
+- [_Difference between Descriptive and Inferential Statistics_ - Statistics By Jim](https://statisticsbyjim.com/basics/descriptive-inferential-statistics/)
+- [_The Importance of Statistics_ - Statistics By Jim](https://statisticsbyjim.com/basics/importance-statistics/)

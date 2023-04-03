@@ -1,0 +1,402 @@
+---
+output: 
+  pdf_document:
+    extra_dependencies: ["float"]
+    includes:
+      in_header: "preamble.tex"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(fig.pos = "H", out.extra = "")
+```
+
+# Tablas de frecuencia
+
+Una _**tabla de frecuencia**_ enumera un conjunto de valores y con qué frecuencia aparece cada uno. La frecuencia es la cantidad de veces que ocurre un valor de datos específico en el conjunto de datos. Estas tablas nos ayudan a comprender qué valores de datos son comunes y cuáles son raros.
+
+Estas tablas organizan los datos y son una forma efectiva de presentar los resultados a otros. Las tablas de frecuencia también se conocen como _**distribuciones de frecuencia**_ porque nos permiten comprender la distribución de valores en el conjunto de datos.
+
+Por ejemplo, si 18 estudiantes tienen perros como mascotas, la frecuencia de tenencia de perros es de 18. Una tabla de frecuencia de tenencia de mascotas enumerará varios tipos de mascotas y sus frecuencias, incluidos los perros.
+
+Las tablas de distribución de frecuencia son una excelente manera de encontrar la moda para conjuntos de datos.
+
+Podemos crear tablas de frecuencia para varios tipos de datos, incluidos categóricos, ordinales y continuos. Los datos categóricos y ordinales tienen agrupaciones naturales que utilizaremos en la distribución de frecuencia. Sin embargo, para datos continuos, debemos crear grupos lógicos para la distribución de frecuencia.
+
+Las tablas de frecuencia muestran las distribuciones de una variable, como el tipo de mascota o la satisfacción con la comida. Cuando necesitemos evaluar dos variables categóricas juntas, usaremos una tabla de contingencia en su lugar.
+
+Veamos ejemplos de tablas de frecuencia para diferentes tipos de datos.
+
+## Datos categóricos
+Los datos categóricos, también conocidos como datos nominales, tienen al menos tres categorías sin orden natural. Por ejemplo, la ciencia ficción, el drama y la comedia son datos nominales.
+
+Para datos categóricos, hacemos una tabla de frecuencia contando la cantidad de veces que aparece cada grupo en el conjunto de datos.
+
+Imaginemos que encuestamos a una clase y les pedimos que indiquen los tipos de mascotas que tienen. El tipo de mascota es una variable categórica. Sus datos sin procesar pueden ser una lista como la siguiente:
+
+| Tipo de mascota |
+|-----------------|
+| Gato            |
+| Perro           |
+| Pez             |
+| Perro           |
+
+A partir de los datos sin procesar, contamos la aparición de cada tipo de mascota y lo registramos en la tabla. Debido a que las categorías no tienen un orden natural, podemos elegir el orden para enumerarlas en la distribución de frecuencia que tenga más sentido para nuestro proyecto. Una opción es enumerar los grupos del más al menos común.
+
+| Tipo de mascota | Frecuencia |
+|-----------------|-----------:|
+| Perro           | 18         |
+| Gato            | 12         |
+| Pez             | 1          |
+| Ninguno         | 10         |
+
+En el ejemplo, enumeramos las categorías en orden descendente de ocurrencia, colocando las mascotas más populares en la parte superior.
+
+La tabla de frecuencia indica que los perros son el tipo de mascota más popular entre los miembros de la clase. Los peces son mascotas raras en esta clase. Diez personas no tienen mascotas.
+
+## Datos ordinales
+Las variables ordinales tienen al menos tres categorías que tienen un orden natural. Los grupos están clasificados, pero las diferencias entre ellos pueden no ser iguales. Por ejemplo, primero, segundo y tercero en una carrera son datos ordinales.
+
+Para datos ordinales, haremos una tabla de frecuencia contando la cantidad de veces que ocurre cada categoría en el conjunto de datos.
+
+Supongamos que encuestamos a los comensales en un restaurante y les pedimos que califiquen su experiencia gastronómica en la siguiente escala ordinal:
+
+* Muy Satisfecho
+* Satisfecho
+* Neutral
+* Insatisfecho
+* Muy insatisfecho
+
+El conjunto de datos podría tener el siguiente aspecto:
+
+| Nivel de satisfacción |
+|-----------------------|
+| Satisfecho            |
+| Muy satisfecho        |
+| Neutral               |
+| Muy satisfecho        |
+
+A partir de los datos brutos, contamos la ocurrencia de cada nivel de satisfacción y lo registramos en la tabla de frecuencia. Debido a que los grupos tienen un orden natural, los anotamos en la tabla de frecuencias usando ese orden. En el ejemplo, enumeramos las categorías en orden descendente de satisfacción.
+
+| Nivel de satisfacción | Fecuencia |
+|-----------------------|----------:|
+| Muy satisfecho        |     59    |
+| Satisfecho            |     42    |
+| Neutral               |     12    |
+| Insatisfecho          |     8     |
+| Muy insatisfecho      |     5     |
+
+La tabla de frecuencia muestra que, en general, la mayoría de los comensales se mostraron muy satisfechos y satisfechos con su experiencia. Sin embargo, hubo algunos comensales que no estaban contentos.
+
+## Datos continuos
+Las variables continuas pueden tomar casi cualquier valor y podemos dividirlas significativamente en incrementos más pequeños, como valores decimales. Por lo general, mediremos datos continuos en una escala. Por ejemplo, cuando medimos altura, peso y temperatura, tenemos datos continuos.
+
+Los datos continuos requieren que creemos los grupos para las tablas de frecuencia porque pueden tener muchos valores distintos.
+
+Imaginemos que estás creando una tabla de frecuencia de alturas para 88 participantes en un estudio. Es probable que los datos tengan muchos valores únicos. A continuación se muestra una parte de las alturas en metros de un estudio realizado con niñas preadolescentes:
+
+| Altura (m) |
+|:----------:|
+|    1.60    |
+|    1.65    |
+|    1.63    |
+|    1.53    |
+|    1.45    |
+|    1.61    |
+|    1.56    |
+
+Si no creamos grupos para datos continuos como el ejemplo anterior, la distribución contendrá muchas filas, cada una con un recuento bajo y eso no es muy útil.
+
+Para hacer una distribución de frecuencia para datos continuos, deberemos crear grupos de valores para los datos continuos. Cuando sea posible, podemos basar los grupos en rangos de valores que tengan sentido para esos datos. Por lo general, la distribución de valores para cada grupo debe ser igual. En la tabla de frecuencias enumeramos estos grupos en orden ascendente. Los grupos deben ser mutuamente excluyentes para que cada punto de datos caiga en un solo grupo.
+
+| Altura (m) | Frecuencia |
+|:----------:|-----------:|
+|  1.33-1.39 |          4 |
+|  1.40-1.45 |         17 |
+|  1.46-1.51 |         28 |
+|  1.52-1.57 |         20 |
+|  1.58-1.63 |         14 |
+|  1.64-1.69 |          5 |
+
+En una tabla de frecuencia para datos continuos, los conteos de grupos indican el número de veces que los valores de datos caen dentro de cada grupo.
+
+Para los datos de altura, la tabla de frecuencias indica que una mayoría de valores cae cerca del centro de la distribución (1.46 - 1-51 m, _frec_ = 28). A medida que nos alejamos del centro, las ocurrencias disminuyen. Los grupos con las alturas más bajas y más altas tienen los recuentos más bajos, 4 y 5, respectivamente. También podemos ver que la muestra general de alturas oscila entre 1.34 y 1.69 m.
+
+Veamos como haríamos esto en R:
+
+```{r}
+df_h <- read.csv("data/alturas.csv")
+head(df_h)
+```
+
+```{r}
+min(df_h$Height_m)
+```
+
+```{r}
+max(df_h$Height_m)
+```
+
+```{r}
+data_bins <- cut(df_h$Height_m,
+                 breaks = c(1.33, 1.39, 1.45, 1.51, 1.57, 1.63, 1.69),
+                 include.lowest = TRUE)
+table(data_bins)
+```
+
+```{r}
+barplot(table(data_bins), main = "Altura de los participantes",
+        xlab = "Altura (metros)", ylab = "Frecuencia",
+        col = "#3fbec5")
+```
+
+Los analistas a menudo crean gráficos que representan visualmente una distribución de frecuencia porque le da a su informe un mayor impacto visual. Al igual que modificamos las tablas de frecuencia por el tipo de datos, deberemos usar varios tipos de gráficos para diferentes tipos de datos.
+
+Hacer una tabla de frecuencia es solo el primer paso para comprender la distribución de los valores en el conjunto de datos. Para comprender mejor la distribución de los datos, debemos realizar los siguientes pasos:
+
+* Analizar la distribución de frecuencia acumulada
+* Crear una distribución de frecuencias relativas
+* Encontrar la tendencia central de los datos
+* Comprender la variabilidad de los datos
+* Calcular las estadísticas descriptivas para la muestra
+* Identificar la distribución de probabilidad que siguen los datos
+
+## Frecuencia absoluta y relativa
+
+Supongamos que tenemos que estudiar una variable categórica que puede tomar $k$ valores posibles, o bien una variable cuantitativa discreta que puede tomar $k$ valores diferentes, donde $k$ es un número relativamente pequeño.
+
+Estos dos tipos de variables admiten un tratamiento similar, en el que hay que comenzar por averiguar las características siguientes:
+
+1. El número total de individuos de los que se disponen datos; designaremos este número con $N$.
+2. La _**frecuencia absoluta**_ de cada valor de la variable: es decir, el número de individuos para los cuales la variable toma este valor. Designaremos con $n_i$ la frecuencia absoluta del valor $i$.
+3. La _**frecuencia relativa**_ de cada valor de la variable: es decir, la proporción de individuos en los que la variable toma este valor. Designaremos con $f_i$ la frecuencia relativa del valor $i$, y la acostumbraremos a dar en porcentaje. Indica con qué frecuencia ocurre un tipo específico de evento dentro del número total de observaciones. Es un tipo de frecuencia que utiliza porcentajes, proporciones y fracciones.
+
+La distribución de frecuencias de la variable es el conjunto de los valores que adopta la variable y la frecuencia con que los adopta.
+
+La frecuencia absoluta de una categoría es el número de individuos que pertenecen a la categoría. La frecuencia relativa de una categoría es la proporción de individuos que pertenecen a ella.
+
+Una frecuencia absoluta es un conteo de un evento en particular. Por ejemplo, Jim leyó diez libros de estadística este año. El equipo de fútbol ganó 12 partidos.
+
+Por el contrario, las frecuencias relativas no utilizan recuentos sin procesar. En su lugar, relacionan el recuento de un tipo particular de evento con el número total de eventos usando porcentajes, proporciones o fracciones. Ahí es donde entra el término "relativa": un conteo específico relativo al número total. Por ejemplo, el 25% de los libros que leyó Jim eran sobre estadística. El equipo de fútbol ganó el 85% de sus partidos.
+
+Si vemos un conteo, es una frecuencia absoluta. Si vemos un porcentaje, proporción, razón o fracción, es una frecuencia relativa.
+
+Las frecuencias relativas nos ayudan a ubicar un tipo de evento en un contexto más amplio. Por ejemplo, una encuesta indica que a 20 estudiantes les gusta más su curso de estadística. A partir de este recuento en bruto, no se sabe si se trata de una proporción grande o pequeña. Sin embargo, si supiéramos que 30 de 40 (75%) encuestados indicaron que el curso de estadística es su favorito lo consideraríamos un número alto.
+
+Además, te permiten comparar valores entre estudios. Imaginemos que escuelas de diferentes tamaños encuestaron a sus estudiantes y obtuvieron diferentes números de encuestados. Si 30 estudiantes indican que la clase de estadística es su favorita, podría ser un porcentaje alto en una escuela pero un porcentaje bajo en otra, dependiendo del número total de respuestas.
+
+La frecuencia relativa nos será muy útil si debemos comparar la misma variable en dos poblaciones diferentes que tienen diferente número de individuos. Las frecuencias relativas facilitan las comparaciones de manzanas con manzanas.
+
+Para calcular frecuencias relativas, debemoa saber lo siguiente:
+
+1. El recuento de eventos para una categoría.
+2. El número total de eventos.
+
+Los cálculos de frecuencia relativa convierten los conteos en porcentajes tomando el conteo de un tipo específico de evento y dividiéndolo por el número total de observaciones. Su fórmula es la siguiente:
+
+$$\text{Frecuencia relativa}=\frac{\text{Recuento de eventos}}{\text{Número total de observaciones}}$$
+
+Dado que la variable debe tomar alguno de los $k$ valores posibles, es evidente que $n_1 + n_2 + \cdots + n_k = N$. Además, $f_i$ se obtiene de dividir el número de individuos en los que la variable toma el valor y por el total de individuos, es decir:
+
+$$f_1 = \frac{n_i}{N}$$
+
+Es muy fácil ver que $f_1 + f_2 + \cdots + f_k = 1$, es decir, la suma de las frecuencias relativas de todos los valores es siempre igual a 1.
+
+Por ejemplo, imaginemos que una escuela encuesta a 50 estudiantes y les pide que nombren su curso favorito. Treinta y seis estudiantes afirman que estadística es su favorita.
+
+* La frecuencia absoluta de las respuestas de "estadística" es 36.
+* El número total de respuestas es de 50.
+
+Para encontrar la frecuencia relativa para el curso de estadística, realizamos la siguiente división:
+
+$36/50 = 72%$
+
+Las frecuencias relativas también sirven como probabilidades empíricas. Las probabilidades definen la probabilidad de que ocurran los eventos. Los cálculos de probabilidad a menudo se basan en gran medida en la teoría. Sin embargo, cuando observamos la frecuencia relativa de un evento, es una probabilidad empírica. En otras palabras, los analistas las calculan utilizando observaciones del mundo real en lugar de la teoría.
+
+Una probabilidad empírica es el número de eventos del número total de observaciones.
+
+Una _**distribución de frecuencias relativas**_ describe las frecuencias relativas de todos los posibles resultados de un estudio. Mientras que un solo valor es para un tipo de evento, la distribución muestra porcentajes para todos los resultados posibles. Los analistas suelen presentar estas distribuciones mediante tablas y gráficos de barras.
+
+Cuando evaluamos dos variables categóricas juntas, podemos usar frecuencias relativas en una tabla de contingencia.
+
+Veamos un ejemplo. La siguiente tabla de distribución de frecuencias relativas muestra el porcentaje de estudiantes en cada curso en una escuela pequeña con 88 estudiantes.
+
+|         Curso | Nº estudiantes | Frecuencia relativa |
+|--------------:|---------------:|--------------------:|
+|             1 |             23 |               26.1% |
+|             2 |             20 |               22.7% |
+|             3 |             15 |               17.0% |
+|             4 |             12 |               13.6% |
+|             5 |             10 |               11.4% |
+|             6 |              8 |                9.1% |
+|         Total |             88 |                100% |
+
+Si la tabla tuviera solo las dos primeras columnas, curso y número de estudiantes, sería una distribución de frecuencia absoluta. Una distribución de frecuencias absolutas describe los recuentos de todos los resultados posibles. Es la columna de porcentaje lo que la convierte en una distribución de frecuencia relativa. Podemos ver cómo se relacionan los dos tipos de distribuciones.
+
+Para crear una tabla de distribución de frecuencias relativas, tomamos el conteo de estudiantes en una fila (un curso) y lo dividimos por el número total de estudiantes. Por ejemplo, en la primera fila hay 23 estudiantes de primer curso: 23 de 88 = 26,1 %. Para los alumnos de segundo curso, es 20 de 88 = 22,7 %. Repetimos este proceso para todas las filas de la tabla.
+
+Debido a que estas tablas consideran todos los resultados posibles, el porcentaje total debe sumar 100%, excepto por error de redondeo.
+
+Son útiles porque conocemos instantáneamente el porcentaje del total de cada resultado y podemos identificar tendencias y patrones. Por ejemplo, los alumnos de primer grado representan ellos solos un poco más de una cuarta parte (26,1%) de toda la escuela. Por el contrario, los alumnos de sexto grado representan solo el 9,1% de la escuela. Hay una tendencia a la baja en los valores a medida que aumentan los niveles de grado.
+
+También podemos usar gráficos de barras para mostrar distribuciones de frecuencias relativas. El siguiente gráfico muestra la misma información que la tabla. Muestra una clara tendencia a que los grados superiores tengan porcentajes más pequeños del total de estudiantes.
+
+```{r}
+data <- data.frame(Curso = c(1, 2, 3, 4, 5, 6),
+                   Num_estudiantes = c(23, 20, 15, 12, 10, 8),
+                   Frecuencia_relativa = c(26.1, 22.7, 17.0, 13.6, 11.4, 9.1))
+data
+```
+
+```{r}
+barplot(data$Frecuencia_relativa, names.arg = data$Curso,
+        xlab = "Curso", ylab = "Frecuencia relativa",
+        main = "Frecuencia relativa por curso", col = "blue")
+```
+
+
+## Frecuencia acumulada
+
+En caso de que tenga sentido ordenar los valores de la variable, para cada valor $x_j$ se pueden definir la _**frecuencia absoluta acumulada**_, que es la suma de las frecuencias de los valores menores o iguales que $x_j$, y la _**frecuencia relativa acumulada**_, que es la suma de las frecuencias relativas de los valores menores o iguales que $x_j$.
+
+Más formalmente, si tenemos $N$ observaciones de una variable que toma $k$ valores diferentes $x_1,x_2,x_3, \cdots, x_k$, de manera que $x_1 + x_2 + x_3 + \cdots + x_k$, definimos:
+
+* La frecuencia absoluta acumulada del valor $x_j$ como $N_j = n_1 + n_2 + n_3 + \cdots + n_j$.
+* La frecuencia relativa acumulada del valor $x_j$ como $F_j = f_1 + f_2 + f_3 + \cdots + f_j$.
+
+De estas definiciones, resulta evidente que $N_k = n_1 + n_2 + n_3 + \cdots + n_k = N$ y que $F_k = f_1 + f_2 + f_3 + \cdots + f_k = 1$.
+
+Una _**distribución de frecuencia relativa acumulada**_ suma la progresión de las frecuencias relativas a través de todos los resultados posibles. La creación de este tipo de distribución implica agregar una columna más a la tabla y sumar los valores a medida que avanza por las filas para crear un total acumulado acumulativo.
+
+Para este ejemplo, volveremos a los estudiantes de la escuela.
+
+| Curso escuela | Nº estudiantes | Frecuencia relativa | Frecuencia relativa acumulada |
+|--------------:|---------------:|--------------------:|------------------------------:|
+|             1 |             23 |               26.1% |                         26.1% |
+|             2 |             20 |               22.7% |                         48.8% |
+|             3 |             15 |               17.0% |                         65.8% |
+|             4 |             12 |               13.6% |                         79.4% |
+|             5 |             10 |               11.4% |                         90.8% |
+|             6 |              8 |                9.1% |                          100% |
+|         Total |             88 |                100% |                          100% |
+
+Para encontrar el valor acumulativo de cada fila, sumamos las frecuencias relativas a medida que avanzamos por las filas. El primer valor en la fila acumulativa es igual a la frecuencia relativa de esa fila. Para la segunda fila, agregamos el valor de esa fila a la fila anterior. En la tabla, sumamos 26,1 + 22,7 = 48,8%. En la tercera fila, agregamos 17% al valor acumulado anterior, 17 + 48.8 = 65.8%. Y así sucesivamente para todas las filas.
+
+El valor acumulado final debe ser igual a 1 o 100%, salvo error de redondeo.
+
+También podemos mostrar distribuciones de frecuencias relativas acumulativas en gráficos. Utilizaremos estas distribuciones acumulativas para determinar dónde ocurren la mayoría de los eventos/observaciones. En los datos del ejemplo, los alumnos de primer y segundo grado comprenden aproximadamente la mitad de la escuela.
+
+```{r}
+data$Frecuencia_relativa_acumulada <- c(26.1, 48.8, 65.8, 79.4, 90.8, 100)
+data
+```
+
+```{r}
+plot(data$Curso, data$Frecuencia_relativa_acumulada,
+     xlab = "Curso", ylab = "Frecuencia relativa acumulada",
+     main = "Frecuencia relativa acumulada por curso",
+     type = "l", col = "blue")
+```
+
+```{r}
+barplot(data$Frecuencia_relativa_acumulada, names.arg = data$Curso,
+        xlab = "Curso", ylab = "Frecuencia relativa acumulada",
+        main = "Frecuencia relativa acumulada por curso", col = "blue")
+```
+
+La _**frecuencia acumulada**_ es por tanto el total acumulado de frecuencias en una tabla. Usaremos las frecuencias acumulativas para responder preguntas sobre la frecuencia con la que una característica ocurre por encima o por debajo de un valor particular. También se conoce como distribución de frecuencia acumulada.
+
+Por ejemplo, ¿cuántos estudiantes hay en el 4° grado o menor en una escuela?
+
+La frecuencia acumulativa se basa en los conceptos de frecuencia y distribución de frecuencia.
+
+* _**Frecuencia**_, es el número de veces que aparece un valor en un conjunto de datos. Por ejemplo, hay 12 alumnos de cuarto grado en la escuela.
+* _**Distribución de frecuencia**_, una tabla que enumera todos los valores en el conjunto de datos y cuántas veces ocurre cada uno. 
+
+Encontrar una distribución de frecuencia acumulada tiene más sentido cuando los datos tienen un orden natural. El orden natural permite que el total acumulado sea significativo. Con un cambio menor, el proceso funciona tanto con datos discretos como continuos.
+
+Por ejemplo, las calificaciones en una escuela, los meses del año o la edad en años son valores discretos con un orden lógico. Alternativamente, cuando tenemos datos continuos, podemos crear rangos de valores conocidos como clases. En este caso, las frecuencias son recuentos de la frecuencia con la que los datos continuos caen dentro de cada clase.
+
+Calculamos la frecuencia acumulada comenzando en la parte superior de una tabla de frecuencias y trabajando hacia abajo. Tomamos la frecuencia de cada fila y agregamos todas las filas anteriores. Al sumar las filas actual y anterior, calculamos el total acumulado.
+
+Usemos este método para encontrar la frecuencia acumulada para datos discretos y continuos.
+
+El siguiente ejemplo muestra cómo construir una distribución de frecuencia acumulada para un conjunto de datos discreto de cursos escolares (1 a 6). Observamos cómo cada fila toma la frecuencia acumulada anterior y luego suma la frecuencia de esa fila para calcular el total acumulado.
+
+| Curso escuela | Frecuencia estudiantes | Frecuencia acumulada |
+|--------------:|-----------------------:|---------------------:|
+|             1 |                     23 |                   23 |
+|             2 |                     20 |         23 + 20 = 43 |
+|             3 |                     15 |         43 + 15 = 58 |
+|             4 |                     12 |         58 + 12 = 70 |
+|             5 |                     10 |         70 + 10 = 80 |
+|             6 |                      8 |          80 + 8 = 88 |
+
+Por ejemplo, si observamos la fila de 3º curso de la tabla, veremos que la frecuencia acumulada es 58. Este resultado nos dice que 58 estudiantes están en el tercer curso o menos.
+
+En esta tabla, la frecuencia acumulada para el valor más alto es igual al número total de observaciones en el conjunto de datos porque todos los valores son menores o iguales. 6º curso es el valor más alto, y 88 estudiantes son menores o iguales a él. Por lo tanto, sabemos que hay 88 estudiantes en este conjunto de datos.
+
+Cuando tenemos datos continuos, es posible que no tengamos valores repetidos. Por ejemplo, ningún valor se repite en la tabla de los datos de altura a continuación. En consecuencia, tendríamos una serie de valores, cada uno con una frecuencia de uno.
+
+| Altura (m) |
+|:----------:|
+|    1.60    |
+|    1.65    |
+|    1.63    |
+|    1.53    |
+|    1.45    |
+|    1.61    |
+|    1.56    |
+
+Sin embargo, podemos obtener información significativa agrupando los valores en rangos y encontrando la frecuencia para cada clase, como se muestra a continuación.
+
+| Altura (m) | Frecuencia |
+|:----------:|-----------:|
+|  1.33-1.39 |          4 |
+|  1.40-1.45 |         17 |
+|  1.46-1.51 |         28 |
+|  1.52-1.57 |         20 |
+|  1.58-1.63 |         14 |
+|  1.64-1.69 |          5 |
+
+Luego, para crear la tabla de frecuencias acumulativas, sumamos cada fila con todas las filas anteriores tal como lo hicimos para el ejemplo de datos discretos.
+
+| Altura (m) | Frecuencia | Fecuencia acumulada |
+|:----------:|-----------:|--------------------:|
+|  1.33-1.39 |          4 |                   4 |
+|  1.40-1.45 |         17 |         4 + 17 = 21 |
+|  1.46-1.51 |         28 |        21 + 28 = 49 |
+|  1.52-1.57 |         20 |        49 + 20 = 69 |
+|  1.58-1.63 |         14 |        69 + 14 = 83 |
+|  1.64-1.69 |          5 |         83 + 5 = 88 |
+
+Por ejemplo, al observar la fila de 1,46 a 1,51 m, sabemos que 49 niñas preadolescentes (un poco más de la mitad de la muestra de 88) tienen estaturas menores o iguales a 1,51 m.
+
+Los dos ejemplos anteriores usan la forma "menor que" de la tabla. Cuando observamos esas tablas de frecuencia acumulada, el valor indica el número total de observaciones que son menores o iguales a un valor específico. Por ejemplo, 70 estudiantes están en cuarto grado o menos.
+
+Sin embargo, ¿qué debemos hacer cuando necesitamos comprender frecuencias que son mayores o iguales a un valor particular? Simplemente cambiamos el orden de los valores en la tabla para enumerarlos de mayor a menor. Este proceso construye una distribución de frecuencia mayor que la acumulada.
+
+En el siguiente ejemplo, volveremos a crear la tabla de nivel de grado, pero en lugar de enumerar los cursos 1 a 6, la cambiaremos a 6 a 1. A partir de ese momento, usaremos el mismo método para sumar la fila actual con todas las filas anteriores.
+
+| Curso escuela | Frecuencia estudiantes | Frecuencia acumulada |
+|--------------:|-----------------------:|---------------------:|
+|             6 |                      8 |                    8 |
+|             5 |                     10 |          8 + 10 = 18 |
+|             4 |                     12 |         18 + 12 = 30 |
+|             3 |                     15 |         30 + 15 = 45 |
+|             2 |                     20 |         45 + 20 = 65 |
+|             1 |                     23 |         65 + 23 = 88 |
+
+En esta distribución mayor que, las frecuencias acumuladas indican el número de observaciones mayores o iguales a un valor particular. Por ejemplo, 30 estudiantes están en cuarto curso o superior.
+
+En esta tabla, la frecuencia acumulada para el valor más bajo es igual al número total de observaciones porque todas las observaciones son mayores o iguales. 1º curso es el valor más bajo con 88 estudiantes mayor o igual a él.
+
+La decisión de usar una tabla de frecuencias acumuladas mayor o menor que depende de qué forma es más útil para nuestra área temática.
+
+Como hemos visto, también podemos mostrar la frecuencia acumulada en gráficos. En el gráfico, los alumnos de primer y segundo grado comprenden casi la mitad de la escuela. A medida que los niveles de grado progresan de menor a mayor, la línea se eleva al número total de estudiantes, 88.
+
+
+## Fuentes
+
+- [_Frequency Table: How to Make & Examples_ - Statistics By Jim](https://statisticsbyjim.com/basics/frequency-table/)
+- [_Relative Frequencies and Their Distributions_ - Statistics By Jim](https://statisticsbyjim.com/basics/relative-frequency/)
+- [_Cumulative Frequency: Finding & Interpreting_ - Statistics By Jim](https://statisticsbyjim.com/basics/cumulative-frequency/)

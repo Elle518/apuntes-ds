@@ -207,6 +207,6 @@ Algunos ejemplos son los archivos en formato XML o JSON.
 
 ## Fuentes
 
-- [_Discrete vs. Continuous Data: Differences & Examples_](https://statisticsbyjim.com/basics/discrete-vs-continuous-data/)
-- [_Guide to Data Types and How to Graph Them in Statistics_](https://statisticsbyjim.com/basics/data-types/)
-- [_Structured Data vs. Unstructured Data: what are they and why care?_](https://lawtomated.com/structured-data-vs-unstructured-data-what-are-they-and-why-care/)
+- [_Discrete vs. Continuous Data: Differences & Examples_ - Statistics By Jim](https://statisticsbyjim.com/basics/discrete-vs-continuous-data/)
+- [_Guide to Data Types and How to Graph Them in Statistics_ - Statistics By Jim](https://statisticsbyjim.com/basics/data-types/)
+- [_Structured Data vs. Unstructured Data: what are they and why care?_ - Statistics By Jim](https://lawtomated.com/structured-data-vs-unstructured-data-what-are-they-and-why-care/)

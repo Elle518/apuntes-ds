@@ -135,4 +135,4 @@ Muchas veces la diferencia entre la escala de proporci√≥n y de intervalo no ser√
 
 ## Fuentes
 
-- [_Nominal, Ordinal, Interval, and Ratio Scales_](https://statisticsbyjim.com/basics/nominal-ordinal-interval-ratio-scales/)
+- [_Nominal, Ordinal, Interval, and Ratio Scales_ - Statistics By Jim](https://statisticsbyjim.com/basics/nominal-ordinal-interval-ratio-scales/)
